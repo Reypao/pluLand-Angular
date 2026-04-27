@@ -1,87 +1,149 @@
-<header class="site-header">
-  <div class="container nav-wrap">
-    <a class="logo" href="index.html">
-      <strong>Plu Landscaping</strong>
-      <span>Outdoor Living & Hardscape</span>
-    </a>
+<header class="navbar">
+  <div class="brand">
+    <img src="assets/images/logoLaBrujita2.png" alt="La Brujita Logo">
 
-    <button class="nav-toggle" aria-label="Open menu">☰</button>
-
-    <nav class="nav">
-      <a class="active" href="#">Home</a>
-      <a href="#">Services</a>
-      <a href="#">About Us</a>
-      <a href="#">Gallery</a>
-      <a href="#">Contact</a>
-      <a class="btn" href="#">Get a Quote</a>
-    </nav>
   </div>
+
+  <nav>
+    <a href="#prestamos">Préstamos</a>
+    <a href="#beneficios">Beneficios</a>
+    <a href="#ayuda">Ayuda</a>
+    <a href="#contacto" class="btn-small">Solicitar ahora</a>
+  </nav>
 </header>
+
 <main>
-  <h1>Mi primer componente</h1>
-</main>
-<!-- FOOTER HERO -->
-<section class="footer-hero">
-  <div class="footer-hero-overlay">
-    <h2>LET’S BUILD SOMETHING GREAT.</h2>
-  </div>
-</section>
+  <section class="hero" id="prestamos">
+    <div class="hero-content">
+      <p class="eyebrow">Préstamos personales rápidos y seguros</p>
+      <h1>Dinero cuando lo necesitas, con un proceso fácil y claro.</h1>
+      <p class="hero-text">
+        En La Brujita te ayudamos a encontrar una solución financiera personal
+        con atención amable, rápida y transparente.
+      </p>
 
-<!-- MAIN FOOTER -->
-<footer class="footer">
-  <div class="container footer-grid">
-
-
-    <!-- LEFT -->
-    <div class="footer-col">
-      <img src="./../../assets/images/footer/pluLogo.png" alt="Plu Landscaping Logo">
-      <h3>Plu Landscaping</h3>
-      <p>Outdoor Living & Hardscape</p>
-
-
-    </div>
-
-    <!-- SERVICES -->
-    <div class="footer-col">
-      <h4>Services</h4>
-      <ul>
-        <li>Pavers</li>
-        <li>Retaining Walls</li>
-        <li>Patios & Outdoor Living</li>
-        <li>Fences</li>
-      </ul>
-    </div>
-
-    <!-- LINKS -->
-    <div class="footer-col">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-col">
-      <p>📍 Salt Lake City, Utah</p>
-      <p>📞 <a href="tel:8015010014">801-501-0014</a></p>
-      <p>✉️ <a href="mailto:plulanfdscaoing@gmail.com">plulanfdscaoing@gmail.com</a></p>
-    </div>
-
-    <!-- SOCIAL -->
-    <div class="footer-col">
-      <h4>Follow Us</h4>
-      <div class="social">
-        <a href="#">Facebook</a>
-        <a href="#">Instagram</a>
+      <div class="loan-box">
+        <label for="amount">Cantidad del préstamo</label>
+        <div class="input-row">
+          <span>$</span>
+          <input id="amount" type="number" placeholder="2500">
+          <button>Ver mi oferta</button>
+        </div>
+        <small>Consulta rápida. Sin compromiso.</small>
       </div>
     </div>
 
-  </div>
+    <div class="hero-img">
+      <div class="chart-bg">
+        <svg viewBox="0 0 600 300" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="brujitaGradient" x1="0" x2="1">
+              <stop offset="0%" stop-color="#f7c948" />
+              <stop offset="50%" stop-color="#8e43d8" />
+              <stop offset="100%" stop-color="#4b157a" />
+            </linearGradient>
+          </defs>
 
-  <div class="footer-bottom">
-    © 2026 Plu Landscaping. All rights reserved.
-  </div>
+          <polyline class="chart-line" points="0,220 80,180 150,200 230,120 310,145 390,75 470,95 560,35 600,60" />
+
+          <polyline class="chart-line second" points="0,260 90,230 160,245 250,190 330,205 430,140 510,155 600,100" />
+        </svg>
+
+        <span class="coin coin-1">$</span>
+        <span class="coin coin-2">$</span>
+        <span class="coin coin-3">$</span>
+      </div>
+
+      <img src="assets/images/logoLaBrujita2.png" alt="La Brujita Logo" />
+    </div>
+  </section>
+
+  <section class="trust">
+    <div>
+      <strong>Rápido</strong>
+      <p>Solicitud sencilla en línea</p>
+    </div>
+    <div>
+      <strong>Seguro</strong>
+      <p>Información protegida</p>
+    </div>
+    <div>
+      <strong>Flexible</strong>
+      <p>Opciones según tu necesidad</p>
+    </div>
+  </section>
+
+  <section class="feature" id="beneficios">
+    <div class="feature-card">
+      <h2>Préstamos personales para tus metas</h2>
+      <ul>
+        <li>Consolidar deudas</li>
+        <li>Emergencias familiares</li>
+        <li>Gastos médicos o personales</li>
+        <li>Mejorar tu flujo de efectivo</li>
+      </ul>
+      <a href="#contacto" class="btn-primary">Empezar solicitud</a>
+    </div>
+
+    <div class="mock-card">
+      <h3>Oferta estimada</h3>
+      <p class="amount">$2,500</p>
+      <p>Proceso simple, rápido y personalizado.</p>
+    </div>
+  </section>
+
+  <section class="help" id="ayuda">
+    <h2>¿Cómo podemos ayudarte hoy?</h2>
+
+    <div class="help-grid">
+      <button>Necesito dinero rápido</button>
+      <button>Quiero consolidar deudas</button>
+      <button>Tengo una emergencia</button>
+      <button>Quiero mejorar mis finanzas</button>
+    </div>
+  </section>
+
+  <section class="steps">
+    <h2>Proceso simple</h2>
+
+    <div class="steps-grid">
+      <article>
+        <span>1</span>
+        <h3>Solicita</h3>
+        <p>Completa tus datos básicos.</p>
+      </article>
+
+      <article>
+        <span>2</span>
+        <h3>Revisa</h3>
+        <p>Te mostramos opciones disponibles.</p>
+      </article>
+
+      <article>
+        <span>3</span>
+        <h3>Recibe</h3>
+        <p>Obtén una respuesta rápida.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="contact" id="contacto">
+    <div>
+      <h2>Solicita tu préstamo personal</h2>
+      <p>Déjanos tu información y te contactamos pronto.</p>
+    </div>
+
+    <form>
+      <input type="text" placeholder="Nombre completo">
+      <input type="tel" placeholder="Teléfono">
+      <input type="email" placeholder="Correo electrónico">
+      <input type="number" placeholder="Cantidad deseada">
+      <button type="submit">Enviar solicitud</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <img src="assets/images/logoLaBrujita2.png" alt="La Brujita Logo">
+  <p>© 2026 La Brujita · Préstamos Personales</p>
 </footer>
